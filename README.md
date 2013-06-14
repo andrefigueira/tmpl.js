@@ -36,17 +36,25 @@ Can get real messy real quick right? I wrote this simple jQuery plugin, This is 
 ##Parameters
 
 `templateDir`
+
 You can change the default templates directory to anything you like.
+
 Default: /templates/
 
 `extension`
+
 Any file type will work, html is the default as it's html that is the main thing tmpl was made for templating
+
 Default: 'html'
 
 `regex`
+
 This matches double curly braces but you can obviosly match whatever you like
+
 Default: '/\{\{(.*?)\}\}/g'
 
 `callback`
+
 Callback parameter for you to run something upon completion of getting the template.
+
 Default: function(){}
