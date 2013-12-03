@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tmpl</title>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="../src/tmpl.js"></script>
+    <script>
+        
+        $(document).ready(function(){
+            
+            var test = $().tmpl('test');
+            var result = test.parse({name: 'andre'});
+            
+            $('.results').html(result);
+            
+        });
+        
+    </script>
+</head>
+<body>
+    
+    <div class="users">
+        
+        <h2>Test</h2>
+        
+        <div class="results"></div>
+        
+    </div><!-- End users -->
+    
+</body>
+</html>

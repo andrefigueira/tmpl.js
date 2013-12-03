@@ -1,12 +1,22 @@
+/**
+ * A simple JavaScript templating engine, reads templates then places data into them.
+ * 
+ * @author André Figueira
+ * @version 0.2
+ * 
+ * @param {type} template
+ * @param {type} options
+ * @returns {$.fn.tmpl.defaults}
+ * 
+ */
 $.fn.tmpl = function(template, options)
 {
 
     var defaults = {
-        templateDir: '/templates/',
+        templateDir: 'templates/',
         extension: 'html',
-        regex: /\{\{(.*?)\}\}/g,
-        callback: function(){}
-    }
+        regex: /\{\{(.*?)\}\}/g
+    };
 
     var options = $.extend(defaults, options);
     
@@ -15,7 +25,7 @@ $.fn.tmpl = function(template, options)
 		
 		return options.templateDir + template + '.' + options.extension;
 		
-	}
+	};
     
     defaults.parse = function(parseData)
     {
@@ -28,14 +38,16 @@ $.fn.tmpl = function(template, options)
     	$(parseData).each(function(k, v){
     	
     		html += template.replace(options.regex, function(match, token){
+                
 			    return v[token];
+                
 			});
     		
     	});
     	
     	return html;
 	    
-    }
+    };
     
     function getTemplate()
     {
@@ -54,7 +66,7 @@ $.fn.tmpl = function(template, options)
     	
     	return fileContents;
 	    
-    }
+    };
     
     return defaults;
 

@@ -1,0 +1,10 @@
+{
+  "name": "tmpl",
+  "version": "0.1",
+  "ignore": [
+    ".example"
+  ],
+  "dependencies": {
+    "jquery": "2.0.3"
+  }
+}
