@@ -2,7 +2,7 @@
  * A simple JavaScript templating engine, reads templates then places data into them.
  * 
  * @author André Figueira
- * @version 0.2
+ * @version 0.0.3
  * 
  * @param {type} template
  * @param {type} options
@@ -15,7 +15,7 @@ $.fn.tmpl = function(template, options)
     var defaults = {
         templateDir: 'templates/',
         extension: 'html',
-        regex: /\{\{(.*?)\}\}/g
+        regex: /\{\{ (.*?) \}\}/g
     };
 
     var options = $.extend(defaults, options);

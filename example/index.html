@@ -8,8 +8,13 @@
         
         $(document).ready(function(){
             
-            var test = $().tmpl('test');
-            var result = test.parse({name: 'andre'});
+            var tmpl = $().tmpl('test');
+
+            var data = {
+                name: 'Andre'
+            };
+
+            var result = tmpl.parse(data);
             
             $('.results').html(result);
             
@@ -22,7 +27,6 @@
     <div class="users">
         
         <h2>Test</h2>
-        
         <div class="results"></div>
         
     </div><!-- End users -->
