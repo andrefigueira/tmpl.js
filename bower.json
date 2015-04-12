@@ -1,6 +1,6 @@
 {
-  "name": "tmpl.js",
-  "version": "0.0.1",
+  "name": "plates.js",
+  "version": "0.0.3",
   "homepage": "https://github.com/andrefigueira/tmpl.js",
   "authors": [
     "André Figueira <andre.figueira@me.com>"
